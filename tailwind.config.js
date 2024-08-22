@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      fontFamily : {
-        "manrope" : ["Manrope", "sans-serif"]
-      }
+    content: [
+        "./index.html",
+        "./src/**/*.{html,js}"
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                "manrope": ["Manrope", "sans-serif"]
+            }
+        },
     },
-  },
-  plugins: [require("daisyui")],
+    plugins: [require("daisyui")],
 }
 
