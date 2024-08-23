@@ -20,7 +20,7 @@
     <title>Rinterio</title>
 </head>
 <body class="font-manrope bg-gradient-to-b from-base-200 to-white min-h-screen">
-<header class="md:container mx-auto pt-14 px-4 lg:px-0">
+<header class="md:container mx-auto pt-8 lg:pt-16 px-4 lg:px-0">
     <div class="flex justify-between">
         <div class="flex justify-center items-center gap-2">
             <div class="p-2 bg-lime-400 rounded-full">
@@ -71,7 +71,16 @@
                     </div>
                 </div>
             </a>
+
         </div>
+
+        <div class="size-16 bg-white rounded-full border border-gray-200 justify-center items-center inline-flex lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </div>
+
     </div>
 </header>
 <section class="lg:pb-32 pb-0 px-4 lg:px-0">
@@ -534,9 +543,9 @@
         </div>
     </div>
 </article>
-<section class="bg-cover bg-center bg-no-repeat min-h-screen mt-5" style="background-image: url(public/bg.jpg)">
+<section class="bg-cover bg-center bg-no-repeat min-h-screen mt-5  pb-24" style="background-image: url(public/bg.jpg)">
     <div class="container mx-auto justify-center flex flex-col items-center">
-        <div class="flex lg:flex-col justify-center items-center pt-44 gap-10">
+        <div class="flex flex-col justify-center items-center pt-44 gap-10">
             <div class="flex px-4 py-2 bg-lime-300/20 rounded-3xl gap-2 items-center justify-center  w-fit">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="size-8">
@@ -551,20 +560,19 @@
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="grid grid-cols-2 w-[80%] gap-10 py-10">
+        <div class="grid lg:grid-cols-2 w-[80%] gap-10 py-10">
             <input type="text" placeholder="First Name*"
-                   class="input input-bordered py-10 px-8 text-xl  rounded-full  "/>
-            <input type="text" placeholder="Last Name*" class="input input-bordered py-10 text-xl px-8 rounded-full "/>
+                   class="input input-bordered lg:py-10 py-8 px-8 text-xl  rounded-full  "/>
+            <input type="text" placeholder="Last Name*"
+                   class="input input-bordered py-10 text-xl lg:py-10 py-8 rounded-full "/>
             <input type="text" placeholder="Phone Number*"
-                   class="input input-bordered py-10 text-xl px-8 rounded-full "/>
-            <input type="text" placeholder="Email*" class="input input-bordered py-10 text-xl px-8 rounded-full "/>
+                   class="input input-bordered text-xl lg:py-10 py-8 rounded-full "/>
+            <input type="text" placeholder="Email*" class="input input-bordered  text-xl lg:py-10 py-8 rounded-full "/>
 
         </div>
         <textarea
                 placeholder="Write our message here"
                 class="textarea textarea-bordered textarea-lg w-[80%] rounded-[3rem] h-80 text-2xl p-8"></textarea>
-
-
 
         <a class="px-5 py-4 bg-lime-300 rounded-full justify-center w-[80%] items-center gap-2 mt-10 inline-flex">
             <div class="justify-start items-center gap-2 flex">
@@ -579,7 +587,52 @@
             </div>
         </a>
     </div>
-
 </section>
+<footer>
+    <header class="mx-auto pt-40 px-4 lg:px-0 pb-24 bg-zinc-900">
+        <div class="flex flex-col justify-between items-center gap-10">
+            <div class="flex justify-center items-center gap-2">
+                <div class="p-2 bg-lime-400 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="black" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-gray-200 lg:text-[2.5rem] text-3xl font-extrabold">Rinterio</h1>
+                </div>
+            </div>
+            <p class="text-neutral-500 lg:text-[1.4rem] text-center lg:text-wrap text-balance lg:max-w-5xl lg:text-center lg:leading-9 text-xl font-medium">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            <div class="navbar-center flex justify-between">
+                <ul class="menu menu-horizontal gap-4 px-1 text-xl text-gray-200 flex  flex-col lg:flex-row">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="lg:flex gap-5">
+
+                <a class="px-5 py-4 bg-lime-300 rounded-full justify-center items-center gap-2 inline-flex">
+                    <div class="justify-start items-center gap-2 flex">
+                        <p class="text-zinc-900 text-[1.8rem] font-extrabold font-['Manrope']">Book Consult</p>
+                        <div class="p-2 bg-zinc-900 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="white" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+</footer>
 </body>
 </html>
